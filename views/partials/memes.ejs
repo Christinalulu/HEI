@@ -1,0 +1,22 @@
+
+
+<div class="inner">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+<% for(let i = 0; i < memes.length && i < 20; i++) { %>
+  <div class="col">
+      <div class="card h-100">
+          <img src="<%= memes[i].url %>" class="card-img-top" alt="<%= memes[i].name %>">
+          <div class="card-body">
+              <h5 class="card-title"><%= memes[i].name %></h5>
+          </div>
+          <% if (isLoggedIn) { %>
+              <div class="card-footer">
+                  <button class="text-body-secondary">Details</button>
+              </div>
+          <% } %>
+      </div>
+  </div>
+  
+<% } %>
+</div>
+</div>

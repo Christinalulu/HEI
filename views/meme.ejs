@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Meme Info</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link href="../stylesheets/navbar.css" rel="stylesheet">
+  <link rel="stylesheet" href="../stylesheets/meme.css">
+</head>
+
+
+ <body class="position-relative" data-bs-spy="scroll">
+  <%- include('./partials/navbar.ejs') %> 
+    <section class="container">
+      <h1>Meme Page</h1>
+    </section>
+     <%- include('./partials/scripts.ejs') %> 
+</body>
+
+<td><a href="/memes/<%= memes[i].id %>">Details</a></td>
+
+<section class="container">
+  <h1>Meme Page</h1>
+  <p>ID: <%= meme.id %></p>
+  <p>Name: <%= meme.name %></p>
+  <p>URL: <%= meme.url %></p>
+  <p>Dimensions: <%= meme.width %>x<%= meme.height %></p>
+</section>
+
+
+
+
+</html>
+
+
